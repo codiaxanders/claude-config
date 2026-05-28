@@ -1,0 +1,13 @@
+# Claude Code credentials and session state — never commit these
+.credentials.json
+*.local.json
+
+# These live in ~ not in the repo, but guard against accidental inclusion
+.claude.json
+
+# Secrets that might accidentally end up here
+*.env
+.env.*
+*secret*
+*token*
+*password*
