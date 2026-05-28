@@ -37,9 +37,9 @@
       }
     ]
   },
-  "alwaysThinkingEnabled": false,
-  "autoMemoryEnabled": true,
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true
-  }
+  },
+  "alwaysThinkingEnabled": false,
+  "autoMemoryEnabled": true
 }

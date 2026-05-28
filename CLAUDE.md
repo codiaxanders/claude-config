@@ -90,6 +90,25 @@ If everything is clean, you will be shown a summary and asked for explicit confi
 
 ---
 
+## Build logging
+
+When running any build command (bitbake, make, or similar long-running build
+tools), always tee stdout/stderr to a timestamped log file:
+
+```bash
+<build-command> 2>&1 | tee build/logs/build-$(date +%Y%m%d-%H%M%S).log
+```
+
+- Create `build/logs/` if it does not exist
+- Live output still appears in the terminal
+- Log files stay available after the fact for failure diagnosis
+- For Yocto specifically, per-task logs are in `build/tmp/work/.../temp/log.do_*`
+- `build/logs/` should be gitignored
+
+This applies to all projects unless a project-specific `CLAUDE.md` says otherwise.
+
+---
+
 ## Yocto / embedded Linux projects
 
 I work extensively with Yocto/OpenEmbedded. General awareness:
