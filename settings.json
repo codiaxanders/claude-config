@@ -1,6 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-
+  "env": {
+    "DISABLE_AUTOUPDATER": "0"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "allow": [
       "Bash(git diff*)",
@@ -18,7 +24,6 @@
       "Read(~/.gnupg/**)"
     ]
   },
-
   "hooks": {
     "PreToolUse": [
       {
@@ -32,16 +37,9 @@
       }
     ]
   },
-
-  "attribution": {
-    "commit": "",
-    "pr": ""
-  },
-
-  "env": {
-    "DISABLE_AUTOUPDATER": "0"
-  },
-
+  "alwaysThinkingEnabled": false,
   "autoMemoryEnabled": true,
-  "alwaysThinkingEnabled": false
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  }
 }

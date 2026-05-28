@@ -1,0 +1,8 @@
+# Downloaded plugin cache — large, contains nested .git dirs, re-fetched on reload
+cache/
+
+# Auto-generated catalog cache
+plugin-catalog-cache.json
+
+# Downloaded marketplace catalog — re-fetched on reload
+marketplaces/

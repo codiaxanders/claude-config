@@ -72,6 +72,7 @@ make_symlink "$REPO_DIR/settings.json"  "$CLAUDE_DIR/settings.json"
 make_symlink "$REPO_DIR/hooks"          "$CLAUDE_DIR/hooks"
 make_symlink "$REPO_DIR/agents"         "$CLAUDE_DIR/agents"
 make_symlink "$REPO_DIR/templates"      "$CLAUDE_DIR/templates"
+make_symlink "$REPO_DIR/plugins"        "$CLAUDE_DIR/plugins"
 
 # ── Ensure hook is executable ─────────────────────────────────────────────────
 
