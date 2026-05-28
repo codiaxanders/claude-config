@@ -7,6 +7,7 @@
 - Shell: bash
 - SSH keys: `~/.ssh/` and via 1Password SSH agent
 - Git remotes: accessed over SSH; multiple servers
+- Primary languages: Python 3, Bash scripting
 
 ## General behavior
 
