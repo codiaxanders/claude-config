@@ -38,8 +38,9 @@
     ]
   },
   "enabledPlugins": {
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": false
   },
   "alwaysThinkingEnabled": false,
-  "autoMemoryEnabled": true
+  "autoMemoryEnabled": true,
+  "theme": "auto"
 }
