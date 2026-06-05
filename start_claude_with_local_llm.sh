@@ -4,10 +4,10 @@
 #export ANTHROPIC_MODEL=glm-4.7-flash
 
 # Funkar ok:
-export ANTHROPIC_MODEL=gemma4:e4b
+export ANTHROPIC_MODEL=gemma4:e4b-128k-fast
 
-# Kanske bättre:
-export ANTHROPIC_MODEL=gpt-oss:20b
+# Kanske bättre resonemang, men mindre context
+#export ANTHROPIC_MODEL=gpt-oss:20b
 
 export ANTHROPIC_BASE_URL=http://localhost:11434
 
