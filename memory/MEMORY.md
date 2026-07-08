@@ -1,0 +1,1 @@
+- [Python skill profile](user_python_skill_profile.md) — strong bash/C, comfortable patching Python, wants to write Python from scratch

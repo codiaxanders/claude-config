@@ -74,6 +74,18 @@ make_symlink "$REPO_DIR/agents"         "$CLAUDE_DIR/agents"
 make_symlink "$REPO_DIR/templates"      "$CLAUDE_DIR/templates"
 make_symlink "$REPO_DIR/plugins"        "$CLAUDE_DIR/plugins"
 
+# ── Personal memory sync ──────────────────────────────────────────────────────
+# Auto-memory is stored per project directory, keyed by the cwd path with
+# slashes replaced by dashes. This only syncs the memory created while running
+# sessions with cwd == $HOME; memory from sessions started in other
+# directories lives under a different project-hash folder and isn't covered.
+
+section "Personal memory sync"
+PROJECT_HASH="$(echo "$HOME" | tr '/' '-')"
+PROJECT_DIR="$CLAUDE_DIR/projects/$PROJECT_HASH"
+mkdir -p "$PROJECT_DIR"
+make_symlink "$REPO_DIR/memory" "$PROJECT_DIR/memory"
+
 # ── Ensure hook is executable ─────────────────────────────────────────────────
 
 section "Hook permissions"
