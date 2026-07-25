@@ -11,5 +11,7 @@ export ANTHROPIC_MODEL=gemma4:e4b-128k-fast
 
 export ANTHROPIC_BASE_URL=http://localhost:11434
 
+export ANTHROPIC_SMALL_FAST_MODEL=gemma4:e4b-128k-fast 
+
 claude
 
