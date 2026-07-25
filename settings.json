@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash -c 'echo \"$CLAUDE_TOOL_INPUT\" | grep -qE \"^git commit\" && exec ~/.claude/hooks/pre-commit-check.sh || exit 0'"
+            "command": "bash ~/.claude/hooks/pre-commit-gate.sh"
           }
         ]
       }

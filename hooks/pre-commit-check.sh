@@ -43,8 +43,9 @@ STAGED_FILES=$(git diff --cached --name-only 2>/dev/null || true)
 STAGED_DIFF=$(git diff --cached 2>/dev/null || true)
 
 # Proposed commit message (from -m flag if present, otherwise empty)
-# Claude Code passes the full command as CLAUDE_TOOL_INPUT
-COMMIT_CMD="${CLAUDE_TOOL_INPUT:-}"
+# pre-commit-gate.sh extracts the command from the PreToolUse stdin JSON
+# and passes it along as GIT_COMMIT_CMD
+COMMIT_CMD="${GIT_COMMIT_CMD:-}"
 COMMIT_MSG=""
 if [[ "$COMMIT_CMD" =~ -m[[:space:]]+\"([^\"]+)\" ]]; then
     COMMIT_MSG="${BASH_REMATCH[1]}"
