@@ -6,9 +6,10 @@
 .claude.json
 
 # Plugin runtime state — written by Claude Code itself, not config
+# (installed_plugins.json / known_marketplaces.json are tracked on purpose —
+# they're what makes plugins sync across machines; see plugins/.gitignore
+# for the actual cache/marketplace downloads that ARE excluded)
 plugins/.last_inuse_sweep
-plugins/known_marketplaces.json
-plugins/installed_plugins.json
 
 # Secrets that might accidentally end up here
 *.env
