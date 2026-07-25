@@ -5,6 +5,10 @@
 # These live in ~ not in the repo, but guard against accidental inclusion
 .claude.json
 
+# Plugin runtime state — written by Claude Code itself, not config
+plugins/.last_inuse_sweep
+plugins/known_marketplaces.json
+
 # Secrets that might accidentally end up here
 *.env
 .env.*
