@@ -1,1 +1,4 @@
 - [Python skill profile](user_python_skill_profile.md) — strong bash/C, comfortable patching Python, wants to write Python from scratch
+- [claude-config repo & sync](claude_config_repo_and_sync.md) — global config lives in ~/github/codiaxanders/claude-config, symlinked into ~/.claude, auto-synced via SessionStart hook
+- [Never auto-commit/push](never-auto-commit-or-push.md) — always ask before git commit/push, even in the config repo, except the one narrow plugin-manifest exception
+- [Memory sync scope](memory_sync_scope_rule.md) — write general (user/feedback/reference) memories to the synced $HOME memory dir regardless of session cwd; ask if unsure whether something's general or repo-specific
