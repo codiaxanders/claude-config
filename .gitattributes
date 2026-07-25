@@ -1,0 +1,2 @@
+plugins/known_marketplaces.json filter=pluginstate
+plugins/installed_plugins.json filter=pluginstate

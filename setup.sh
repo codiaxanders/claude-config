@@ -91,6 +91,18 @@ make_symlink "$REPO_DIR/memory" "$PROJECT_DIR/memory"
 section "Hook permissions"
 chmod +x "$REPO_DIR/hooks/pre-commit-check.sh"
 info "hooks/pre-commit-check.sh is executable"
+chmod +x "$REPO_DIR/hooks/normalize-plugin-state.sh"
+info "hooks/normalize-plugin-state.sh is executable"
+
+# ── Plugin-state clean filter ─────────────────────────────────────────────────
+# plugins/known_marketplaces.json and plugins/installed_plugins.json carry
+# timestamp fields that churn on every plugin check. Without this, every
+# machine's routine sync commit touches those timestamps and the repo
+# diverges. The filter normalizes them away before git ever sees a diff.
+
+section "Plugin-state clean filter"
+git -C "$REPO_DIR" config filter.pluginstate.clean "$REPO_DIR/hooks/normalize-plugin-state.sh"
+info "git config filter.pluginstate.clean set"
 
 # ── Verify credentials are NOT in the repo ───────────────────────────────────
 
