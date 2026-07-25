@@ -35,6 +35,17 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/session-start-check.sh 2>/dev/null",
+            "timeout": 30
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {
