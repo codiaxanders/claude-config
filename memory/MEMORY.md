@@ -2,3 +2,5 @@
 - [claude-config repo & sync](claude_config_repo_and_sync.md) — global config lives in ~/github/codiaxanders/claude-config, symlinked into ~/.claude, auto-synced via SessionStart hook
 - [Never auto-commit/push](never-auto-commit-or-push.md) — always ask before git commit/push, even in the config repo, except the one narrow plugin-manifest exception
 - [Memory sync scope](memory_sync_scope_rule.md) — write general (user/feedback/reference) memories to the synced $HOME memory dir regardless of session cwd; ask if unsure whether something's general or repo-specific
+- [Stealth mode & .gitignore](feedback_stealth_mode_gitignore.md) — never add .claude/ to .gitignore in stealth mode, the entry itself is a trace
+- [Trusted directories](feedback_trusted_dirs.md) — in user-designated trusted dirs, read freely and don't prompt for non-writing commands
