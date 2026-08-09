@@ -37,5 +37,25 @@ export ANTHROPIC_BASE_URL=http://localhost:11434
 export ANTHROPIC_MODEL=gemma4:31b-it-64k
 #export ANTHROPIC_SMALL_FAST_MODEL=gemma4:31b-it-64k
 export ANTHROPIC_SMALL_FAST_MODEL=qwen2.5-coder:3b-4k
+
+# Auto-mode-klassificeraren (som avgör om Bash-kommandon är säkra att
+# auto-godkänna) gör ett eget live-anrop mot ANTHROPIC_MODEL, vilket
+# konkurrerar om samma trånga Ollama-slot som huvudkonversationen och gav
+# "gemma4:31b-it-64k is temporarily unavailable..." (2026-08-09, se
+# crawler-projektets PROJECT_STATUS.md och claude-config/memory-local-llm-eval/
+# project_claude_code_automode_local_backend.md för full analys).
+# CLAUDE_CODE_BG_CLASSIFIER_MODEL/AUTO_MODE_MODEL nedan är EMPIRISKT
+# BEKRÄFTADE ATT INTE FUNGERA för att routa om just den klassificeraren
+# (testat två gånger, identiskt fel kvarstod) - kvarlämnade ofarligt ifall
+# en framtida Claude Code-version börjar respektera dem, men förlita er inte
+# på dem. Den faktiska fixen för venv-kommandon m.fl. är statiska
+# permissions.allow-regler + att undvika venv helt (se CLAUDE.md i
+# crawler-projektet). CLAUDE_CODE_SUBAGENT_MODEL fungerar dock riktigt bra -
+# bekräftat att superpowers-subagenter kör mot lokal modell utan att falla
+# tillbaka på hårdkodade Anthropic-modellnamn.
+export CLAUDE_CODE_BG_CLASSIFIER_MODEL=qwen2.5-coder:3b-4k
+export CLAUDE_CODE_AUTO_MODE_MODEL=qwen2.5-coder:3b-4k
+export CLAUDE_CODE_SUBAGENT_MODEL=gemma4:31b-it-64k
+
 claude
 

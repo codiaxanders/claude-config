@@ -1,0 +1,5 @@
+- [Claude-config repo reference](reference_claude_config_repo.md) — where start scripts & ollama setup notes live
+- [Local LLM eval status](project_local_llm_eval.md) — gemma4:31b-it-64k pick, hardware (2x RTX 5060 Ti), points to the automode-classifier writeup
+- [Claude Code auto-mode + local backend](project_claude_code_automode_local_backend.md) — classifier root cause, what's fixable (SUBAGENT_MODEL) vs not (AUTO_MODE_MODEL, venv), current working config
+- [Crawler test project](project_crawler_se_indexer.md) — .se URL indexer, Plans 1-3 verified as of 2026-08-09
+- [Verify headless vs interactive](feedback_verify_headless_tests_against_interactive.md) — headless -p tests miss session-start-only model calls, flag this proactively

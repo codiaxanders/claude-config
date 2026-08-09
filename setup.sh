@@ -86,6 +86,15 @@ PROJECT_DIR="$CLAUDE_DIR/projects/$PROJECT_HASH"
 mkdir -p "$PROJECT_DIR"
 make_symlink "$REPO_DIR/memory" "$PROJECT_DIR/memory"
 
+# Local-LLM eval project memory (cwd ~/workspace/claude_tests/local_llm_eval).
+# Same per-project-hash scheme as above, added explicitly because that work
+# spans machines and shouldn't be stuck on ws1 only.
+LOCAL_LLM_EVAL_DIR="$HOME/workspace/claude_tests/local_llm_eval"
+LOCAL_LLM_EVAL_HASH="$(echo "$LOCAL_LLM_EVAL_DIR" | tr '/' '-')"
+LOCAL_LLM_EVAL_PROJECT_DIR="$CLAUDE_DIR/projects/$LOCAL_LLM_EVAL_HASH"
+mkdir -p "$LOCAL_LLM_EVAL_PROJECT_DIR"
+make_symlink "$REPO_DIR/memory-local-llm-eval" "$LOCAL_LLM_EVAL_PROJECT_DIR/memory"
+
 # ── Ensure hook is executable ─────────────────────────────────────────────────
 
 section "Hook permissions"
