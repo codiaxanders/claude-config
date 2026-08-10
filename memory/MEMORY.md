@@ -4,3 +4,4 @@
 - [Memory sync scope](memory_sync_scope_rule.md) — write general (user/feedback/reference) memories to the synced $HOME memory dir regardless of session cwd; ask if unsure whether something's general or repo-specific
 - [Stealth mode & .gitignore](feedback_stealth_mode_gitignore.md) — never add .claude/ to .gitignore in stealth mode, the entry itself is a trace
 - [Trusted directories](feedback_trusted_dirs.md) — in user-designated trusted dirs, read freely and don't prompt for non-writing commands
+- [Claude usage-window ping](user_claude_usage_window_ping.md) — erdinger cron pings claude at 5/10/15 to open 3 fresh 5h quota windows/workday
