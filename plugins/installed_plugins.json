@@ -10,6 +10,15 @@
         "lastUpdated": "1970-01-01T00:00:00.000Z",
         "gitCommitSha": "d884ae04edebef577e82ff7c4e143debd0bbec99"
       }
+    ],
+    "context7@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/unknown",
+        "version": "unknown",
+        "installedAt": "1970-01-01T00:00:00.000Z",
+        "lastUpdated": "1970-01-01T00:00:00.000Z"
+      }
     ]
   }
 }
