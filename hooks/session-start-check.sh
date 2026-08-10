@@ -32,6 +32,12 @@ if [[ ! -d "$REPO_DIR/.git" ]]; then
     exit 0
 fi
 
+if [[ "${CLAUDE_PING_MODE:-}" == "true" ]]; then
+    notes+=("skipped sync (CLAUDE_PING_MODE=true)")
+    emit
+    exit 0
+fi
+
 sync_state() {
     local local_rev upstream_rev base_rev
     local_rev=$(git -C "$REPO_DIR" rev-parse @ 2>/dev/null)
