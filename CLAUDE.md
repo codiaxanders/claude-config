@@ -9,6 +9,12 @@
 - Git remotes: accessed over SSH; multiple servers
 - Primary languages: Python 3, Bash scripting
 
+## Memory system
+
+- Auto-memory is stored per-session-cwd under `~/.claude/projects/<hash-of-cwd>/memory/`. Only the folder for sessions started in `$HOME` (`~/.claude/projects/-home-anders/memory/`) is synced across machines, backed by `~/github/codiaxanders/claude-config/memory/`.
+- At the start of every session, regardless of the session's actual cwd, also check `~/.claude/projects/-home-anders/memory/MEMORY.md` for relevant general memories — do not rely only on the local per-cwd memory folder, which is often empty or stale for non-`$HOME` sessions.
+- When saving a new memory that is general (about me or how I work, not tied to one specific project's codebase), write it into `~/.claude/projects/-home-anders/memory/` and update that directory's `MEMORY.md`, not the local per-cwd one.
+
 ## General behavior
 
 - Be concise. No unnecessary preamble or filler.

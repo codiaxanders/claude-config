@@ -48,6 +48,11 @@
             "type": "command",
             "command": "bash ~/.claude/hooks/session-start-notes-check.sh 2>/dev/null",
             "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/session-start-handoff-check.sh 2>/dev/null",
+            "timeout": 10
           }
         ]
       }

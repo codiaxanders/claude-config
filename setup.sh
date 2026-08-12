@@ -73,6 +73,7 @@ make_symlink "$REPO_DIR/hooks"          "$CLAUDE_DIR/hooks"
 make_symlink "$REPO_DIR/agents"         "$CLAUDE_DIR/agents"
 make_symlink "$REPO_DIR/templates"      "$CLAUDE_DIR/templates"
 make_symlink "$REPO_DIR/plugins"        "$CLAUDE_DIR/plugins"
+make_symlink "$REPO_DIR/commands"       "$CLAUDE_DIR/commands"
 
 # ── Personal memory sync ──────────────────────────────────────────────────────
 # Auto-memory is stored per project directory, keyed by the cwd path with
@@ -102,6 +103,8 @@ chmod +x "$REPO_DIR/hooks/pre-commit-check.sh"
 info "hooks/pre-commit-check.sh is executable"
 chmod +x "$REPO_DIR/hooks/normalize-plugin-state.sh"
 info "hooks/normalize-plugin-state.sh is executable"
+chmod +x "$REPO_DIR/hooks/session-start-handoff-check.sh"
+info "hooks/session-start-handoff-check.sh is executable"
 
 # ── Plugin-state clean filter ─────────────────────────────────────────────────
 # plugins/known_marketplaces.json and plugins/installed_plugins.json carry
