@@ -12,7 +12,7 @@ set -euo pipefail
 INPUT=$(cat)
 CMD=$(echo "$INPUT" | jq -r '.tool_input.command // empty')
 
-if echo "$CMD" | grep -qE '^git commit'; then
+if echo "$CMD" | grep -qE '\bgit\s+commit\b'; then
     GIT_COMMIT_CMD="$CMD" exec "$(dirname "${BASH_SOURCE[0]}")/pre-commit-check.sh"
 else
     exit 0
