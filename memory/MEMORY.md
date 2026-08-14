@@ -6,3 +6,4 @@
 - [Trusted directories](feedback_trusted_dirs.md) — in user-designated trusted dirs, read freely and don't prompt for non-writing commands
 - [Claude usage-window ping](user_claude_usage_window_ping.md) — erdinger cron pings claude at 5/10/15 to open 3 fresh 5h quota windows/workday
 - [Check synced memory every session](feedback_check_synced_memory_every_session.md) — read the $HOME memory index at session start regardless of cwd, don't rely on local per-cwd folder alone
+- [HANDOFF.md lifecycle](feedback_handoff_md_lifecycle.md) — it's ephemeral, auto-removed after being read; lingering presence signals a cleanup failure, not normal
