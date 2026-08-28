@@ -7,3 +7,5 @@
 - [Claude usage-window ping](user_claude_usage_window_ping.md) — erdinger cron pings claude at 5/10/15 to open 3 fresh 5h quota windows/workday
 - [Check synced memory every session](feedback_check_synced_memory_every_session.md) — read the $HOME memory index at session start regardless of cwd, don't rely on local per-cwd folder alone
 - [HANDOFF.md lifecycle](feedback_handoff_md_lifecycle.md) — it's ephemeral, auto-removed after being read; lingering presence signals a cleanup failure, not normal
+- [External editor file races](feedback_external_editor_file_races.md) — re-read files fresh right before editing if they may be open in Emacs; commit git checkpoints often
+- [Re-examine diagnosis when fix fails](feedback_reexamine_diagnosis_when_fix_fails.md) — don't intensify a failed fix, re-derive root cause from the actual error/traceback first
