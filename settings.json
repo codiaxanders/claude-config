@@ -62,6 +62,12 @@
     "superpowers@claude-plugins-official": true,
     "context7@claude-plugins-official": true
   },
+  "language": "sv",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
   "autoMemoryEnabled": true,
-  "theme": "auto"
+  "theme": "auto",
+  "voiceEnabled": true
 }
