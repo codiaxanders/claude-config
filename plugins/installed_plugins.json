@@ -14,8 +14,8 @@
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/1dd995193ba2",
-        "version": "1dd995193ba2",
+        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/85cce0381e78",
+        "version": "85cce0381e78",
         "installedAt": "1970-01-01T00:00:00.000Z",
         "lastUpdated": "1970-01-01T00:00:00.000Z"
       }
