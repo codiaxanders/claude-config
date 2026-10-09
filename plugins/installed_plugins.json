@@ -14,11 +14,11 @@
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/d182ca456ca0",
-        "version": "d182ca456ca0",
+        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/315c4e48967d",
+        "version": "315c4e48967d",
         "installedAt": "1970-01-01T00:00:00.000Z",
         "lastUpdated": "1970-01-01T00:00:00.000Z",
-        "gitCommitSha": "d182ca456ca09d31d139f7d3818d1d333b103cce"
+        "gitCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
       }
     ]
   }
