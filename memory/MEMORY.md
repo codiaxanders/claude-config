@@ -13,3 +13,4 @@
 - [No SendUserFile at desk](feedback_no_sendfile_at_desk.md) — don't send renders/PDFs to chat unless asked; Anders views the PDF locally, says when he's on the phone
 - [Outsource commands](outsource_commands.md) — /outsource, /intake, /outsource-scan for generic jobs to other agents; first job OS-20260928-fa8cd1 out
 - [Prefer reversible decisions](feedback_prefer_reversible_decisions.md) — propose a concrete changeable decision instead of an open item; one item at a time, explain why it matters
+- [Copy-paste commands](feedback_copy_paste_multiline_commands.md) — every pasteable line under ~70 chars, split with backslash; long one-liners break when terminal wraps
