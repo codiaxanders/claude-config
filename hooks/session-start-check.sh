@@ -98,13 +98,21 @@ while IFS= read -r line; do
     fi
 done < <(git -C "$REPO_DIR" status --porcelain 2>/dev/null)
 
+# Only auto-commit when in step with upstream, and undo the commit if the
+# push fails, so unpushed "Sync plugin state" commits never pile up locally.
 if [[ ${#plugin_dirty[@]} -gt 0 ]]; then
-    if git -C "$REPO_DIR" add "${plugin_dirty[@]}" 2>/dev/null \
-       && git -C "$REPO_DIR" commit --quiet -m "Sync plugin state" 2>/dev/null \
-       && git -C "$REPO_DIR" push --quiet 2>/dev/null; then
-        notes+=("synced plugin state")
+    if [[ "$(sync_state)" != "synced" ]]; then
+        warnings+=("plugin state changed but not synced with upstream — left uncommitted")
+    elif git -C "$REPO_DIR" add "${plugin_dirty[@]}" 2>/dev/null \
+       && git -C "$REPO_DIR" commit --quiet -m "Sync plugin state" 2>/dev/null; then
+        if git -C "$REPO_DIR" push --quiet 2>/dev/null; then
+            notes+=("synced plugin state")
+        else
+            git -C "$REPO_DIR" reset --quiet --soft HEAD~1
+            warnings+=("plugin state push failed — commit undone, changes left staged")
+        fi
     else
-        warnings+=("plugin state changed but auto commit/push failed")
+        warnings+=("plugin state changed but auto commit failed")
     fi
 fi
 
