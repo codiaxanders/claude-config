@@ -6,3 +6,7 @@ plugin-catalog-cache.json
 
 # Downloaded marketplace catalog — re-fetched on reload
 marketplaces/
+
+# Plugin directory listing cache and runtime sync markers
+plugin-directory-cache-v2.json
+synced/
