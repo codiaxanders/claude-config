@@ -9,3 +9,7 @@
 - [HANDOFF.md lifecycle](feedback_handoff_md_lifecycle.md) — it's ephemeral, auto-removed after being read; lingering presence signals a cleanup failure, not normal
 - [External editor file races](feedback_external_editor_file_races.md) — re-read files fresh right before editing if they may be open in Emacs; commit git checkpoints often
 - [Re-examine diagnosis when fix fails](feedback_reexamine_diagnosis_when_fix_fails.md) — don't intensify a failed fix, re-derive root cause from the actual error/traceback first
+- [Voice dictation](user_voice_dictation.md) — Anders often dictates by voice; interpret misheard words from context, ask when meaning is unclear
+- [No SendUserFile at desk](feedback_no_sendfile_at_desk.md) — don't send renders/PDFs to chat unless asked; Anders views the PDF locally, says when he's on the phone
+- [Outsource commands](outsource_commands.md) — /outsource, /intake, /outsource-scan for generic jobs to other agents; first job OS-20260928-fa8cd1 out
+- [Prefer reversible decisions](feedback_prefer_reversible_decisions.md) — propose a concrete changeable decision instead of an open item; one item at a time, explain why it matters
