@@ -23,3 +23,5 @@ plugins/.last_inuse_sweep
 *#*.*#
 *~
 *.*~
+
+__pycache__/
