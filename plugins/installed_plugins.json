@@ -4,21 +4,21 @@
     "superpowers@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
-        "version": "7.0.0",
+        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.2",
+        "version": "7.0.2",
         "installedAt": "1970-01-01T00:00:00.000Z",
         "lastUpdated": "1970-01-01T00:00:00.000Z",
-        "gitCommitSha": "bb92a77741419a4ab5f06e711a283343f1ada0c3"
+        "gitCommitSha": "22f0b463e7a5e579904dd6211a520321035526f7"
       }
     ],
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/43fd1f9db094",
-        "version": "43fd1f9db094",
+        "installPath": "/home/anders/.claude/plugins/cache/claude-plugins-official/context7/b5b01ac4f889",
+        "version": "b5b01ac4f889",
         "installedAt": "1970-01-01T00:00:00.000Z",
         "lastUpdated": "1970-01-01T00:00:00.000Z",
-        "gitCommitSha": "43fd1f9db0941b2b83cb62268e35970d4a67c202"
+        "gitCommitSha": "b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6"
       }
     ]
   }
