@@ -14,3 +14,9 @@
 - [Outsource commands](outsource_commands.md) — /outsource, /intake, /outsource-scan for generic jobs to other agents; first job OS-20260928-fa8cd1 out
 - [Prefer reversible decisions](feedback_prefer_reversible_decisions.md) — propose a concrete changeable decision instead of an open item; one item at a time, explain why it matters
 - [Copy-paste commands](feedback_copy_paste_multiline_commands.md) — every pasteable line under ~70 chars, split with backslash; long one-liners break when terminal wraps
+- [Parallel agents](feedback_limit_parallel_agents.md) — no fixed cap since 2026-11-27; maximise throughput, flag runaway usage; stop all on "pausa"
+- [Check branch before commit](check-branch-before-commit.md) — user may switch branches between turns; verify before commit/push
+- [Swedish CI terms](feedback_swedish_ci_terms.md) — say "runners", never "löparna"; keep established English CI terms in Swedish text
+- [Chat language Swedish](feedback_chat_language_swedish.md) — always reply in Swedish in chat, even after English file work
+- [Codiax TATE rig](codiax_tate_rig.md) — office test rig: tate hosts, tateusr login, tatectl + tate-web API/console, claims, Atlas board map, USB-serial recovery
+- [Codiax CI runners & tuborg](codiax_ci_runners_and_servers.md) — heineken/tuborg forgejo runners (capacity 4), tuborg TFTP/NFS boot server on rig net
